@@ -9,10 +9,14 @@ In this project, I evaluate the accuracy of the model by calculating `average er
 ##  Dependencies and run instructions
 
 This code is written in Python 3, and uses the following packages:
-pandas
+
+`pandas
+
 datetime 
+
 numpy
-sys
+
+sys`
 
 To run the code, simply use run `./run.sh` from the project's root directory. To change the input or output path please modify the header of `./src/prediction-validation.py`.
 
@@ -32,7 +36,7 @@ These steps are done in `preProcess` function, which output is a cleaned datafra
 
 ## Calculate the average error
 
-To calculate the `average error`, I, first, calculate `error` which is the absolute difference between actial and predicted data. Second, I start sliding a time window with `windowsize` size over the data and calculate the `sum` and the number of the data (`count`) corresponding to each time perid. Third, I divide `sum` to `count`, to get the average for each time window data. 
+To calculate the `average error`, I, first, calculate `error` which is the absolute difference between actial and predicted data. Second, I start sliding a time window with `windowsize` size over the data and calculate the `sum` and the number of the data (`count`) corresponding to each time perid. Third, I divide `sum` by `count`, to get the average for each time window data. 
 
 These steps are done in `averageErrorCalc` function.
 
