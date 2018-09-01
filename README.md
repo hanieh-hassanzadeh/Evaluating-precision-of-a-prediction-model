@@ -1,4 +1,4 @@
-# Evaluating accuracy of a prediction model
+# Evaluating accuracy of a predictive model
 
 Assume that we have a model to predict the stock price. This model outputs various stocks price every hour, in the form of 
 
